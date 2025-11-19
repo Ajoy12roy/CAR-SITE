@@ -5,6 +5,7 @@ import Home from './pages/Home.jsx'
 import Cars from './pages/cars.jsx'
 import CarDetails from './pages/CarDetails.jsx'
 import MyBookings from './pages/MyBookings.jsx'
+import Footer from './components/Footer.jsx'
 
 
 const App = () => {
@@ -25,6 +26,8 @@ const App = () => {
       <Route path='/my-bookings' element={<MyBookings />} />
     
      </Routes>
+
+     {!isOwnerPath && <Footer/>}
 
     </>
   )
