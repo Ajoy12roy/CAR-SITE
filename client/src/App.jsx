@@ -8,6 +8,7 @@ import MyBookings from './pages/MyBookings.jsx'
 import Footer from './components/Footer.jsx'
 
 
+
 const App = () => {
 
   const [showLogin, setShowLogin] = useState(false);
@@ -17,12 +18,13 @@ const App = () => {
     <>
 
      {!isOwnerPath && <Navbar showLogin={setShowLogin} />}
+     
     
      <Routes>
      
       <Route path='/' element={<Home />} />
       <Route path='/cars' element={<Cars />} />
-      <Route path='/car-details/:id' element={<CarDetails />} />
+      <Route path= '/car-details/:id' element={<CarDetails />} />
       <Route path='/my-bookings' element={<MyBookings />} />
     
      </Routes>

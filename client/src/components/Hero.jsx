@@ -7,7 +7,7 @@ const Hero = () => {
 
   return (
     <div className='h-screen flex flex-col items-center justify-center gap-14'>
-      <h1 className='text-4xl md:text-5xl font-semibold'>Luxury Cars on Rent</h1>
+      <h1 className='text-4xl md:text-6xl font-semibold  bg-linear-to-r from-emerald-400 via-cyan-500 to-purple-600 bg-400 bg-clip-text text-transparent animate-gradient-move'>Luxury Cars on Rent</h1>
 
       <form className='flex flex-col md:flex-row items-start gap-6
       md:items-center justify-between p-6 rounded-lg md:rounded-full max-w-xs

@@ -8,7 +8,7 @@ const Navbar = ({setShowLogin}) => {
   const navigate = useNavigate()
 
   return (
-    <div className={`flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 text-gray-600 border-b border-gray-300 relative transition-all ${location.pathname === '/' && "bg-white"}`}>
+    <div className={`flex items-center justify-between  px-6  md:px-16 lg:px-24 xl:px-32 py-4 text-gray-600 border-0 relative transition-all ${location.pathname === '/' && "bg-black/10"}`}>
       <Link to='/'>
         <img src={assets.logo} alt="logo" className='h-8' />
       </Link>

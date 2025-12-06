@@ -5,7 +5,7 @@ import { assets,dummyCarData } from '../assets/assets'
 import { useNavigate } from 'react-router-dom'
 
 const FeaturedSection = () => {
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <div className=' items-center py-24 px-6 md:px-16 lg:px-24 xl:px-32'> 
@@ -18,8 +18,8 @@ const navigate = useNavigate();
 <div className='flex gap-6 mt-12 mb-8'>
     {
     dummyCarData.slice(0,6).map((car) => (
-        <div key={car.id}>
-            <CarCards car={car}/>
+        <div key={car._id}>
+            <CarCards car={car} onClick={() => navigate(`/car-details/${car._id}`)}/>
         </div>
     ))
     }
